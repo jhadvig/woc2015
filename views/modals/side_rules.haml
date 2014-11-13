@@ -5,9 +5,32 @@
         %button.close{"data-dismiss" => "modal", :type => "button"}
           %span{"aria-hidden" => "true"} &times;
           %span.sr-only Close
-        %h4#myModalLabel.modal-title Modal title
+        %h4#myModalLabel.modal-title The Rules of the side competition
       .modal-body
-        \...
+        %h4 OpenShift Winter of Code 2015 is organized by Red Hat Czech as part of the Developer Conference which takes place from February 6th to February 8th in Brno, Czech Republic.
+
+        %p This is the second year of this challenge, you can browse the OpenShift Winter of Code 2014 archive page. The challenge is to create an application or a cartridge running on OpenShift. The main winner is going to be the best-in-show submission within the following winning subcategories:
+
+        %ul
+          %li Exotic programming language, anything from ancient to esoteric programming languages, created as a cartridge with a working example.
+          %li Open government, for applications making your government or local community more transparent or applications which empower citizens.
+          %li Creative, unleash your creativity with anything crazy.
+
+        %p Just as a reminder, these are only subcategories; you don't have to enter them specifically to win the main prize.
+
+        %p Your submission must conform to the following rules:
+
+        %ul
+          %li It must be Open Source
+          %li It should be hosted on a public git repository, such as github.com
+          %li If it is a cartridge, it must use the version 2 cartridge format
+          %li It must be deployable on a small gear
+          %li Your project must be respectful of others, and not promote anything illegal, offensive, or harmful.
+
+        %p The winners of the main prize as well as the subcategories are going to be invited to give a short presentation about their submission at the Developer Conference, where the winners will be announced as well. All submissions are due by February 1st, 2015. 
+
+        %p There are several resources you might find useful, such as the OpenShift Origin Documentation, OpenShift blog posts or come hang out in freenode's #openshift IRC channel.
+
       .modal-footer
-        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
-        %button.btn.btn-primary{:type => "button"} Save changes
+        %button.btn.btn-rules.btn-lg{"data-dismiss" => "modal", :type => "button"} Close
+        %button.btn.btn-rules.btn-lg{:type => "button"} Save changes

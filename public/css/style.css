@@ -91,7 +91,8 @@ i.fa.fa-github-square:hover {
   border-color: #ccc;
 }
 
-#mainRulesModal {
+#mainRulesModal,
+#sideRulesModal {
   color: #b2b2b2;
   background-color: #000000;
 }
@@ -296,7 +297,7 @@ a:focus {
 
 /* loader */
 #preloader {
-    background: #ffffff;
+    background: #000000;
     bottom: 0;
     height: 100%;
     left: 0;

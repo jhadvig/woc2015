@@ -1,0 +1,101 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+      %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+        %meta{:content => "", :name => "description"}
+          %meta{:content => "", :name => "author"}
+            %title Winter Of Code
+            / Bootstrap Core CSS
+            %link{:href => "css/bootstrap.min.css", :rel => "stylesheet", :type => "text/css"}
+
+            %link{:href => "font-awesome/css/font-awesome.min.css", :rel => "stylesheet", :type => "text/css"}
+            %link{:href => "css/animate.css", :rel => "stylesheet"}/
+            %link{:href => "/css/main.css", :rel => "stylesheet"}/
+            %link{:href => "css/style.css", :rel => "stylesheet"}
+            %link{:href => "color/default.css", :rel => "stylesheet"}
+            
+  %body#page-top{"data-spy" => "scroll", "data-target" => ".navbar-custom"}
+    / Preloader
+    #preloader
+      #load
+    %nav.navbar.navbar-custom.navbar-fixed-top{:role => "navigation"}
+      .container
+        .navbar-header.page-scroll
+          %button.navbar-toggle{"data-target" => ".navbar-main-collapse", "data-toggle" => "collapse", :type => "button"}
+            %i.fa.fa-bars
+          %a.navbar-brand{:href => "/"}
+            %h1.text Winter Of Code
+            %h1.year 2015
+        / Collect the nav links, forms, and other content for toggling
+        .collapse.navbar-collapse.navbar-right.navbar-main-collapse
+          %ul.nav.navbar-nav
+            %li
+              %a{:href => "#about"} About
+            %li
+              %a{:href => "#rules"} Rules
+            %li
+              %a{:href => "#2014"} Winter 2014
+            %li
+              %a{:href => "#submit"} Submit
+            %li
+              %a{:href => "http://devconf.cz/"} DevConf
+            / %li.dropdown
+            /   %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            /     Last Winter
+            /     %b.caret
+            /   %ul.dropdown-menu
+            /     %li
+            /       %a{:href => "#"} 2014
+            / %li
+            /   %a{:href => "#"} Example menu
+
+        / /.navbar-collapse
+      / /.container
+    / Section: intro
+    %section#intro.intro
+      .slogan
+        %h2 Winter is coming
+        %h4.got-font Brace yourself
+        %h4.got-font Out-code others
+        %h4.got-font Win the prizes
+      .page-scroll
+        / %a.btn.btn-circle{:href => "#service"}
+        %a.btn.OSlogo{:href => "#about"}
+          / %i.fa.fa-angle-double-down.animated
+
+    = haml :"about"
+    = haml :"rules"
+    = haml :"2014"
+    = haml :"submit"
+
+    = haml :"modals/main_rules"
+    = haml :"modals/side_rules"    
+
+
+    / /Section: contact
+    %footer
+      .container
+        .row
+          .col-md-4.col-lg-4
+            %a{:href => "https://www.openshift.com/"}
+              %img{:src => "img/OSlogoFULL.png"}
+          .col-md-4.col-lg-4
+            %a{:href => "http://www.redhat.com/"}
+              %img{:src => "img/RHlogo.png"}
+            / .wow.shake{"data-wow-delay" => "0.4s"}
+            /   .page-scroll.marginbot-30
+            /     %a#totop.btn.btn-circle{:href => "#intro"}
+            /       %i.fa.fa-angle-double-up.animated
+          .col-md-4.col-lg-4
+            %a{:href => "http://devconf.cz/"}
+              %img{:src => "img/DClogo.png"}
+
+    / Core JavaScript Files
+    %script{:src => "js/jquery.min.js"}
+    %script{:src => "js/bootstrap.min.js"}
+    %script{:src => "js/jquery.easing.min.js"}
+    %script{:src => "js/jquery.scrollTo.js"}
+    %script{:src => "js/wow.min.js"}
+    / Custom Theme JavaScript
+    %script{:src => "js/custom.js"}

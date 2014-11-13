@@ -1,0 +1,106 @@
+%section#rules.home-section.text-center.bg-gray
+  .heading-about
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2
+          .wow.bounceInDown{"data-wow-delay" => "0.4s"}
+            .section-heading
+              %h2 Rules of Winter
+
+  .container
+    .row
+      .col-lg-12
+        %hr.marginbot-50
+    .row
+      .col-lg-4.col-lg-offset-4
+        .wow.fadeInUp{"data-wow-delay" => "0.2s"}
+          %h3 MAIN COMPETITION
+    .row
+      .col-sm-4.col-md-4
+        .wow.fadeInLeft{"data-wow-delay" => "0.2s"}
+          .service-box
+            .service-icon
+              %img{:alt => "", :src => "img/os-icon.png"}/
+            .service-desc
+              %h5 1. Sign up for free
+              %p Create your free account with our promo code WINTER2015. The OpenShift free plan comes with 3 small gears, which is more than enough to build your application.
+      .col-sm-4.col-md-4
+        .wow.fadeInUp{"data-wow-delay" => "0.2s"}
+          .service-box
+            .service-icon
+              %i.fa.fa-code
+            .service-desc
+              %h5 2. Code
+              %p Building your cartridge is easy, building your own application on top of existing cartridges is even easier. Before you start, it makes sense to read the documentation first.
+      .col-sm-4.col-md-4
+        .wow.fadeInUp{"data-wow-delay" => "0.2s"}
+          .service-box
+            .service-icon
+              %img{:alt => "", :src => "img/rocket.png"}/
+            .service-desc
+              %h5 3. Submit
+              %p When you're done with your amazing application or cartridge, send it to us. Each participant gets a free T-shirt, so there are no losers in this competition!
+
+    .row
+      .col-lg-4.col-lg-offset-4
+        .wow.fadeInUp{"data-wow-delay" => "0.2s"}
+          %button.btn.btn-rules.btn-lg{:type => "button", "data-toggle" => "modal", "data-target" => "#mainRulesModal"} Complete rules of the Main Competition
+
+
+
+    .row.side-competition
+      .col-lg-2.col-lg-offset-2
+        %hr.marginbot-50
+      .col-lg-4
+        .wow.fadeInRight{"data-wow-delay" => "0.2s"}
+          %h4 SIDE COMPETITION
+      .col-lg-2
+        %hr.marginbot-50
+
+    .row
+      .col-sm-3.col-md-3
+        .wow.fadeInLeft{"data-wow-delay" => "0.2s"}
+          .service-box
+            .service-icon
+              %img{:alt => "", :src => "img/fork.png"}/
+            .service-desc
+              %h5 1. Fork any our repository
+              .fork-text
+                / %a.OSgithub{:href => "https://github.com/openshift"}
+                /   %i.fa.fa-github
+                %p Pick any repository in OpenShift organization on GitHub, into which you would like to contribute.
+
+      .col-sm-3.col-md-3
+        .wow.fadeInRight{"data-wow-delay" => "0.2s"}
+          .service-box
+            .service-icon
+              %i.fa.fa-code
+            .service-desc
+              %h5 2. Code
+              %p Find in the repository any part you would like to change or add to OpenShift. Doesn't matter if it is just a typo fix or code refactoring. Every contribution is valuable.
+      .col-sm-3.col-md-3
+        .wow.fadeInLeft{"data-wow-delay" => "0.2s"}
+          .service-box
+            .service-icon
+              %img{:alt => "", :src => "img/pr.png"}/
+              / %i.fa.fa-rocket
+            .service-desc
+              %h5 3. Send pull request
+              %p Send a Pull Request to our upstream repository with our code/fix. Before you send the Pull Request please read the complete rules first.
+      .col-sm-3.col-md-3
+        .wow.fadeInUp{"data-wow-delay" => "0.2s"}
+          .service-box
+            .service-icon
+              %img{:alt => "", :src => "img/rocket.png"}/
+            .service-desc
+              %h5 4. Submit
+              %p After you Pull Request is merged into upstream, submit the form for the Side Competition, where you put your Pull Request URL, T-Shirt size and your address to which the T-Shirt should be shipped.
+
+    .row
+      .col-lg-6.col-lg-offset-3
+        .wow.fadeInUp{"data-wow-delay" => "0.2s"}
+          %button.btn.btn-rules.btn-lg{:type => "button", "data-toggle" => "modal", "data-target" => "#sideRulesModal"} Complete rules of the Side Competition
+
+    .row
+      .col-lg-2.col-lg-offset-5
+        %i.fa.fa-2x.fa-angle-down.arrow

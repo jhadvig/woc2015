@@ -1,0 +1,137 @@
+%section#submit.home-section.text-center
+  .heading-contact
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2
+          .wow.bounceInUp{"data-wow-delay" => "0.4s"}
+            .section-heading
+              %h2 Submit
+  .container
+    .row
+      .col-lg-12
+        %hr.marginbot-50
+    .row
+      .wow.fadeInLeft{"data-wow-delay" => "0.2s"}
+        .col-lg-6
+          %h2 Main Competition
+          .boxed-grey
+            %form#contact-form
+              .row
+                .col-md-10.col-md-offset-1
+
+                  .form-group
+                    %label{:for => "email"}
+                      Email Address
+                    .input-group
+                      %span.input-group-addon
+                        %span.glyphicon.glyphicon-envelope
+                      %input#email.form-control{:placeholder => "Enter youremail", :required => "required", :type => "email"}/
+
+                  .form-group
+                    %label{:for => "repo_url"}
+                      Public GIT repository URL
+                    %input#name.form-control{:placeholder => "http://github.com/yourname/project", :required => "required", :type => "text"}/
+
+                  .form-group
+                    %label{:for => "openshift_url"}
+                      OpenShift URL
+                    %input#name.form-control{:placeholder => "http://yourapp.rhcloud.com", :required => "required", :type => "text"}/
+
+                  .form-group
+                    %label{:for => "openshift_url"}
+                      Address
+                    %input#name.form-control{:placeholder => "John Doe; Baker Street 007; London; UK", :required => "required", :type => "text"}/
+
+                  .form-group
+                    %label{:for => "subject"}
+                      Preferred T-Shirt size
+                    %select#subject.form-control{:name => "subject", :required => "required"}
+     
+                      %option{:value => "S"} S
+                      %option{:value => "M"} M
+                      %option{:value => "L"} L
+                      %option{:value => "XL"} XL
+                      %option{:value => "XXL"} XXL
+
+                      %option{:value => "F-S"} Female S
+                      %option{:value => "F-M"} Female M
+                      %option{:value => "F-L"} Female L
+                      %option{:value => "F-XL"} Female XL
+                      %option{:value => "F-XXL"} Female XXL
+
+                .col-md-10.col-md-offset-1
+                  %button.btn.btn-rules.btn-lg{:type => "submit"}
+                    Submit
+
+
+
+      .wow.fadeInRight{"data-wow-delay" => "0.2s"}              
+        .col-lg-6.hline
+          %h3 Side Competition
+          .boxed-grey
+            %form#contact-form
+              .row
+                .col-md-10.col-md-offset-1
+
+                  .form-group
+                    %label{:for => "email"}
+                      Email Address
+                    .input-group
+                      %span.input-group-addon
+                        %span.glyphicon.glyphicon-envelope
+                      %input#email.form-control{:placeholder => "Enter youremail", :required => "required", :type => "email"}/
+
+                  .form-group
+                    %label{:for => "repo_url"}
+                      Merged Pull Request URL
+                    %input#name.form-control{:placeholder => "https://github.com/openshift/origin-server/pull/xyz", :required => "required", :type => "text"}/
+
+                  .form-group
+                    %label{:for => "openshift_url"}
+                      Address
+                    %input#name.form-control{:placeholder => "John Doe; Baker Street 007; London; UK", :required => "required", :type => "text"}/
+
+                  .form-group
+                    %label{:for => "subject"}
+                      Preferred T-Shirt size
+                    %select#subject.form-control{:name => "subject", :required => "required"}
+     
+                      %option{:value => "S"} S
+                      %option{:value => "M"} M
+                      %option{:value => "L"} L
+                      %option{:value => "XL"} XL
+                      %option{:value => "XXL"} XXL
+
+                      %option{:value => "F-S"} Female S
+                      %option{:value => "F-M"} Female M
+                      %option{:value => "F-L"} Female L
+                      %option{:value => "F-XL"} Female XL
+                      %option{:value => "F-XXL"} Female XXL
+
+                .col-md-10.col-md-offset-1
+                  %button.btn.btn-rules.btn-lg{:type => "submit"}
+                    Submit
+
+    .row
+      .col-lg-4.col-lg-offset-1
+        %hr.marginbot-50
+      .col-lg-2
+        %h4 Social
+      .col-lg-4
+        %hr.marginbot-50
+    .row
+      .col-md-4.col-md-offset-4
+        %a.icon-button.twitter.social-icon{:href => "https://twitter.com/openshift"}
+          %i.fa.fa-twitter
+          %span
+        %a.icon-button.facebook.social-icon{:href => "https://www.facebook.com/openshift"}
+          %i.fa.fa-facebook
+          %span
+        %a.icon-button.google-plus.social-icon{:href => "https://plus.google.com/u/0/+OpenShift"}
+          %i.fa.fa-google-plus
+          %span
+        %a.icon-button.github.social-icon{:href => "https://github.com/openshift"}
+          %i.fa.fa-github-square
+          %span
+
+
